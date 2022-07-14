@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <title>muSic</title>
+</head>
+<body>
+    <div id="screen">
+        <div id="musicaly">
+            <div id="home-screen">
+                <div id="home-screen-top-section">
+                    <div id="header">
+                        <i class="fas fa-ellipsis-v fa-icon" ></i>
+                        <span id="user-name">Hello, akash</span>
+                    </div>
+        
+                    <div id="tag-line-container">
+                        <span class="tag-line-text">
+                            most
+                        </span>
+                        <span class="tag-line-text">
+                            popular
+                        </span>
+                    </div>
+                    
+                    <div id="song-number">960 playlists</div>
+                    
+                    <div id="songs-container">
+                        <div class="song-thumbnail-card">
+                            <img src="./images/home-screen/pexels-hannah-gibbs-949274.jpg" alt="" class="song-thumbnail-image">
+                        </div>
+    
+                        <div class="song-thumbnail-card">
+                            <img src="./images/home-screen/pexels-mohamed-elamine-msiouri-2108813.jpg" alt="" class="song-thumbnail-image">
+                        </div>
+    
+                    </div>
+                    
+                    <div id="tag-line-container" >
+                        <span class="tag-line-text1">
+                            new releases
+                        </span>
+                    </div>
+                    
+                    <div id="song-number" style="margin-top: 0;">3456 songs</div>
+    
+                    <div id="avatar-container">
+                        <div id="avatar" style="background-image: url(./images/home-screen/pexels-markus-spiske-92080.jpg);"></div>
+                        <div id="avatar" style="background-image: url(./images/home-screen/pexels-luca-nardone-3651845.jpg);"></div>
+                        <div id="avatar" style="background-image: url(./images/home-screen/pexels-penda-kamati-2247129.jpg);"></div>
+                        <div id="avatar" style="background-image: url(./images/home-screen/pexels-brett-sayles-3995718.jpg);"></div>
+                        <div id="avatar" style="background-image: url(./images/home-screen/pexels-rene-asmussen-25758.jpg);"></div>
+                    </div>
+
+                    <div id="break-line"></div>
+                    <div id="selected-song-name">
+                        <span id="selected-song-name-title">hail to the victor</span>
+                        <span id="selected-song-name-text">danito & athina</span>
+                    </div>
+                </div>
+                
+                
+                <div id="player-sceen1">
+                    <div id="player-screen1-left-part">
+                        <div id="avatar" style="background-image: url(./images/play-screen/j.jpg);"></div>
+                    </div>
+                    <div id="player-screen1-right-part">
+                        <div id="player-controls">
+                            <div id="playing-song-details">
+                                <span id="playing-song-name">idk</span>
+                                <span id="playing-song-artist">let you</span>
+                            </div>
+                            <div id="control-buttons">
+                                <i class="fa fa-pause fa-icon" ></i>
+                                <i class="fa fa-forward fa-icon" ></i>
+                            </div>
+                        </div>
+                        <div id="timeline">
+                            <div id="timeline-bar">
+                                <div id="timeline-bar-inner"></div>
+                            </div>
+                            <div id="duration-container">
+                                <span class="duration-text">01:35</span>
+                                <span class="duration-text">05:19</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div id="player-screen">
+                <div id="player-screen-container">
+                    <div id="header">
+                        <i class="fas fa-arrow-left fa-icon" ></i>
+                        <span id="user-name">Hello, akash</span>
+                    </div>
+                    <div id="card">
+                        <div id="music-info-container">
+                            <h3 id="music-title">we don't talk anymore</h3>
+                            <span id="music-artist">charlie puth</span>
+                        </div>
+                        <div id="player-controller">
+                            <div id="progress-bar-container">
+                                <div id="progress-indicator"></div>
+                                <input value=0 type="range" id="progress-bar"/>
+                            </div>
+                            <div id="duration-container">
+                                <span class="duration-text">00:00</span>
+                                <span class="duration-text">05:19</span>
+                            </div>
+                            <div id="player-screen-control-buttons">
+                                <i class="fa fa-backward-step fa-icon" ></i>
+                                <i class="fa fa-backward fa-icon" ></i>
+                                <i class="fa fa-pause fa-icon" ></i>
+                                <i class="fa fa-forward fa-icon" ></i>
+                                <i class="fa fa-forward-step fa-icon" ></i>
+                            </div>
+                            <div id="other-controls">
+                                <i class="fa fa-arrow-rotate-right fa-icon"></i>
+                                <i class="fa fa-shuffle fa-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    $('#progress-bar').on('input',function(event){
+        const width = $(this).val()
+        $('#progress-indicator').css('width',`${width}%`)
+    })
+</script>
+
+</html>

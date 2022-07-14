@@ -1,0 +1,442 @@
+body,html{
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+#screen{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(190, 123, 238);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#musicaly{
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* home screen css */
+#home-screen{
+    width: fit-content;
+    height: fit-content;
+    border-radius: 20px;
+    background-color: black;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    margin-right: 25px;
+}
+
+#home-screen-top-section{
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 25px;
+    padding-left: 20px;
+    padding-right: 20px;   
+}
+
+#tag-line-container{
+    margin-top: 10px;
+    width:100%;
+    display:flex;
+    flex-direction:column;
+}
+
+.tag-line-text{
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.tag-line-text1{
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#song-number{
+    margin-top: 8px;
+    color: white;
+    font-size: 12px;
+    opacity: 60%;
+}
+
+#songs-container{
+    margin-top: 20px;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 2px;
+}
+
+.song-thumbnail-card{
+    min-width: 150px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 12px;
+    margin-right: 24px;
+}
+
+.song-thumbnail-image{
+    width: 100%;
+    height: 100%;
+}
+
+#avatar-container{
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+}
+
+#avatar{
+    min-width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+    margin-right: 10px;
+}
+
+#break-line{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    opacity: 10%;
+    border-radius: 100%;
+}
+
+#selected-song-name{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#selected-song-name-title{
+    color: white;
+    font-size: 12px;
+    margin-bottom: 2px;
+}
+
+#selected-song-name-text{
+    color: white;
+    opacity: 50%;
+    font-size: 10px;
+    margin-bottom: 10px;
+}
+
+#player-sceen1{
+    height: 60px;
+    width: 240px;
+    background-color:rgba(255, 255, 255,0.15);
+    border-radius: 0px 15px 0px 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+#player-screen1-left-part{
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#player-screen1-left-part > #avatar{
+    width: 55px;
+    height: 55px;
+    margin: 0;
+}
+
+#player-screen1-right-part{
+    width: 100%;
+    height: 100%;
+    padding: 0px 4px 0px 8px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#player-controls{
+    display: flex;
+    flex-direction: row;
+}
+
+
+#playing-song-details{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+#playing-song-name{
+    color: white;
+    font-size: 12px;
+}
+
+#playing-song-artist{
+    color: white;
+    opacity: 20%;
+    font-size: 10px;
+}
+
+#control-buttons{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#control-buttons > .fa-icon{
+    margin-left: 20px;
+}
+
+#timeline-bar{
+    width: 100%;
+    height: 3px;
+    background-color: black;
+}
+
+#timeline-bar-inner{
+    height: 100%;
+    width: 30%;
+    background-color: white;
+}
+
+/* player screen css */
+
+#player-screen{
+    border-radius: 25px;
+    background-image: url('./images/play-screen/j.jpg');
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    margin-left: 25px;
+}
+
+#player-screen-container{
+    width: 240px;
+    height: 580px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 15px;
+    padding-top: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#player-screen-control-buttons{
+    font-size : 14px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    mix-blend-mode: difference;
+}
+
+#player-screen-control-buttons > .fa-icon{
+    font-size:18px;
+}
+
+#other-controls{
+    padding: 0 4px 0 4px;
+    display: flex;
+    justify-content: space-between;
+    mix-blend-mode: difference;
+}
+
+#other-controls > .fa-icon{
+    font-size:16px;
+}
+
+#header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    mix-blend-mode: difference;
+}
+
+.fa-icon{
+    color:white;
+    font-size: 15px;
+}
+
+#user-name{
+    color: white;
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#card{
+    width: 100%;
+    height: 180px;
+    background-image: linear-gradient(45deg,rgba(255,255,255,.4),rgba(255,255,255,.1));
+    border-radius:15px;
+    box-shadow: 0px 1px 24px -1px rgba(00,00,00,.5) ;
+    display: flex;
+    flex-direction: column;
+}
+
+#music-info-container{
+    /* border: 1px  solid red; */
+    padding: 10px;
+    mix-blend-mode: difference;
+
+}
+
+#music-title{
+    color:white;
+    /* padding:0; */
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#music-artist{
+    color:#aaa;
+    font-size: 14px;
+    margin: 15px 0 0 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#player-controller{
+    padding: 10px;
+    position: relative;
+
+}
+
+#progress-bar-container{
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 4px;
+    border-radius: 5px;
+    display: flex;
+    position: relative;
+}
+
+#progress-bar {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 4px;
+    border-radius: 5px;
+    background-color:transparent;
+    -webkit-transition: 0.2s;
+    transition: opacity 0.2s;
+    margin: 0;
+    outline: none;
+    z-index: 1;
+  }
+  
+  #progress-bar::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ff2842;
+    cursor: pointer;
+    border: 2px solid #ff2842;
+  }
+  
+  #progress-bar::-moz-range-thumb {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    box-shadow: 0.1px 0.1px 2px 2px white;
+    background-color: white;
+    cursor: pointer;
+  }
+  
+  #progress-indicator{
+      background-color: #ff2842;
+      height: 4px;
+      position: absolute;
+      border-radius: 4px;
+      /* mix-blend-mode: unset; */
+  }
+
+  #duration-container{
+    margin-top: 8px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    mix-blend-mode: difference;
+
+  } 
+
+  .duration-text{
+      color: white;
+      font-size: 12px;
+      font-weight: 600;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  /* width */
+::-webkit-scrollbar {
+    width: 5px;
+    height: 4px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+  @media (max-width:600px) {
+        #musicaly{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #screen{
+            overflow: auto;
+            align-items: flex-start;
+        }
+
+        #home-screen{
+            margin: 0;
+        }
+
+        #player-screen{
+            margin: 0;
+        }
+  }
